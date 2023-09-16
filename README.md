@@ -1,7 +1,11 @@
 # Calculator_CLI
 Calculator made in C++
 # Build Instructions:
-Open up Terminal and run
+## Linux:
 ```
-g++ main.cpp -o main.exe //main.exe can be replaced with exe name
+clang++ lin.cpp -o Calculator
+```
+## Windows:
+```
+clang++ win.cpp -o Calculator.exe
 ```
