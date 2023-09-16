@@ -4,8 +4,11 @@ Calculator made in C++
 ## Linux:
 ```
 clang++ lin.cpp -o Calculator
+chmod +x Calculator
+./Calculator
 ```
 ## Windows:
 ```
 clang++ win.cpp -o Calculator.exe
+start Calculator.exe
 ```
