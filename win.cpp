@@ -1,41 +1,45 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-double num1;
-double num2;
-double result;
-char op;
-int main() {
-cout << "**********Calculator**********\n";
-cout << "(+,-,*,/):";
-cin >> op;
-cout << "Number One:\n";
-cin >> num1;
-cout << "Number Two:\n";
-cin >> num2;
-switch (op)
+int main()
 {
-case '+':
-    result = num1 + num2;
-    cout << "is: " << result;
-    break;
-case '-':
-    result = num1 - num2;
-    cout << "is: " << result;
-    break;
-case '*':
-    result = num1 * num2;
-    cout << "is: " << result;
-    break;
-case '/':
-    result = num1 / num2;
-    cout << "is: " << result;
-    break;
-default:
-    cout << "Error: Unknown operator";
-    break;
+    int var = 1;
+    while (var == 1) {
+        int num1;
+        int num2;
+        char op;
+        cout << "*****Calculator*****" << endl;
+        cout << "First Number:" << endl;
+        cin >> num1;
+        cout << "Operator:" << endl;
+        cin >> op;
+        cout << "Second Number:" << endl;
+        cin >> num2;
+        if (op == '+') {
+            cout << num1 + num2 << endl;
+            cout << "********************";
+            system("timeout /t 2");
+            system("cls");
+        }
+        else if (op == '-') {
+            cout << num1 - num2 << endl;
+            cout << "********************";
+            system("timeout /t 2");
+            system("cls");
+        }
+        else if (op == '*') {
+            cout << num1 * num2 << endl;
+            cout << "********************";
+            system("timeout /t 2");
+            system("cls");
+        }
+        else if (op == '/') {
+            cout << num1 / num2 << endl;
+            cout << "********************";
+            system("timeout /t 2");
+            system("cls");
+        }
+
+    }
 }
-system("pause>nul");
-cout << "\n******************************";
-system("timeout /t 3>nul");
-return 0;
-}
+
